@@ -10,6 +10,9 @@ var users = require('./routes/users');
 var helloRouter = require('./routes/hello');
 var notesRouter = require('./routes/notes');
 var catRouter = require('./routes/cat');
+var dogRouter = require('./routes/dog');
+var newsRouter = require('./routes/news');
+var weatherRouter = require('./routes/weather');
 
 var app = express();
 
@@ -19,6 +22,9 @@ app.set('view engine', 'jade');
 app.use('/hello', helloRouter);
 app.use('/notes', notesRouter);
 app.use('/cat', catRouter);
+app.use('/dog', dogRouter);
+app.use('/news', newsRouter);
+app.use('/weather', weatherRouter);
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
